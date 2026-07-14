@@ -2,7 +2,7 @@
   "name": "colcast",
   "version": "0.1.0",
   "description": "Map messy CSV headers onto a canonical schema with declarative rules and fuzzy fallback, cast every cell to its declared type, and get an auditable report. A CLI and library, not a hosted import SaaS.",
-  "author": "JaydenCJ",
+  "author": "JaydenCJ <aisingioro.kiyon@gmail.com>",
   "license": "MIT",
   "type": "module",
   "bin": {
