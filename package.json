@@ -1,0 +1,54 @@
+{
+  "name": "colcast",
+  "version": "0.1.0",
+  "description": "Map messy CSV headers onto a canonical schema with declarative rules and fuzzy fallback, cast every cell to its declared type, and get an auditable report. A CLI and library, not a hosted import SaaS.",
+  "author": "JaydenCJ",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "colcast": "dist/cli.js"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "examples",
+    "docs/mapping-spec.md",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=22.13"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "npm run build && node --test \"tests/*.test.mjs\"",
+    "smoke": "bash scripts/smoke.sh"
+  },
+  "keywords": [
+    "csv",
+    "schema-mapping",
+    "fuzzy-matching",
+    "data-import",
+    "header-normalization",
+    "etl",
+    "cli"
+  ],
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JaydenCJ/colcast.git"
+  },
+  "homepage": "https://github.com/JaydenCJ/colcast#readme",
+  "bugs": {
+    "url": "https://github.com/JaydenCJ/colcast/issues"
+  }
+}

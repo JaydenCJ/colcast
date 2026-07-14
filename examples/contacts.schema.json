@@ -1,0 +1,65 @@
+{
+  "fields": [
+    {
+      "name": "email",
+      "type": "string",
+      "required": true,
+      "aliases": ["e-mail", "mail", "email address"],
+      "patterns": ["^e-?mail\\b"],
+      "description": "Primary contact email"
+    },
+    {
+      "name": "first_name",
+      "type": "string",
+      "required": true,
+      "aliases": ["given name", "forename"]
+    },
+    {
+      "name": "last_name",
+      "type": "string",
+      "required": true,
+      "aliases": ["surname", "family name"]
+    },
+    {
+      "name": "company",
+      "type": "string",
+      "aliases": ["organization", "employer", "account name"]
+    },
+    {
+      "name": "seats",
+      "type": "integer",
+      "aliases": ["licenses", "license count", "user count"]
+    },
+    {
+      "name": "mrr",
+      "type": "number",
+      "aliases": ["monthly revenue", "monthly recurring revenue"],
+      "description": "Monthly recurring revenue in account currency"
+    },
+    {
+      "name": "signed_up",
+      "type": "date",
+      "aliases": ["signup date", "created", "registration date"]
+    },
+    {
+      "name": "active",
+      "type": "boolean",
+      "aliases": ["is active", "enabled", "status active"]
+    },
+    {
+      "name": "plan",
+      "type": "enum",
+      "values": ["free", "pro", "enterprise"],
+      "valueAliases": {
+        "free": ["trial", "starter"],
+        "pro": ["professional", "premium"],
+        "enterprise": ["ent", "business"]
+      }
+    }
+  ],
+  "options": {
+    "fuzzyThreshold": 0.8,
+    "dayFirst": false,
+    "nullValues": ["", "null", "n/a", "na", "none", "-", "--", "unknown"]
+  }
+}

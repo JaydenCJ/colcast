@@ -1,0 +1,5 @@
+E-Mail Address,firstName,SURNAME,Company / Organization,Licence Count,"MRR, USD",Sign-up Date,Is Active?,Plan Tier,Internal Notes
+ada@example.test,Ada,Lovelace,Analytical Engines Ltd,120,"$4,860.00",2024-11-03,yes,Enterprise,migrated from legacy
+grace@example.test,Grace,Hopper,Flowmatic Inc,15,"€1.234,50",03/11/2024,TRUE,professional,
+alan@example.test,Alan,Turing,,3,"(150)",Nov 3 2024,no,trial,VIP
+katherine@example.test,Katherine,Johnson,Orbital Mechanics LLC,not sure,"2,050",2024-13-45,y,Premium,check seats
